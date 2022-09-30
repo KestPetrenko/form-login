@@ -1,0 +1,105 @@
+html, body {
+    background-image: url(light.png) ;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Staatliches', cursive;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    margin-top: 10%;
+    width: 380px;
+    height: 500px;
+}
+
+.pages {
+    z-index: 1;
+    position: relative;
+}
+
+.shape {
+    position: relative;
+    left: 37px;
+    top: -669px;
+    z-index: 1;
+}
+
+.back {
+    position: relative;
+    left: -25px;
+    top: -356px;
+    z-index: 0;
+}
+
+form {
+    position: relative;
+    top: -685px;
+    z-index: 2;
+    width: 250px;
+    left: 63px;
+}
+
+.form-group {
+    margin: 10px 4px;
+    display: flex;
+    flex-direction: column;
+    left: 63px;
+    color: #666666;
+}
+
+.form-group label {
+    display: block;
+}
+
+.error {
+    color: red;
+    display: none;
+}
+
+.invalid {
+    border: red 1px solid;
+}
+
+.valid {
+    border: green 1px solid;
+}
+input{
+    border-radius: 3px;
+    height: 19px;
+}
+.myButton {
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    cursor: pointer;
+    color: #666666;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+    height: 32px;
+}
+
+.myButton:hover {
+    background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+    background-color: #f6f6f6;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.form-group p{
+    font-size: 35px;
+    margin: 14% 13% 6%;
+}
