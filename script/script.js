@@ -1,5 +1,17 @@
 const form = document.forms[0];
 
+form.passwordConfirmInput.addEventListener("input", function () {
+   
+    if (form.passwordConfirmInput.value != form.passwordInput.value) {
+        form.passwordConfirmInput.setCustomValidity("Пароль и подтверждение пароля не совпадают.");
+        form.passwordInput.setCustomValidity("Пароль и подтверждение пароля не совпадают.");
+    }
+    else {
+        form.passwordConfirmInput.setCustomValidity(""); // убираем ошибку
+        form.passwordInput.setCustomValidity("");
+    }
+});
+
 form.login.addEventListener("change", function () {
     validateElement(form.login, "#loginError");
 });
