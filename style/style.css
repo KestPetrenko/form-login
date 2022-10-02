@@ -37,7 +37,7 @@ html, body {
 
 form {
     position: relative;
-    top: -685px;
+    top: -660px;
     z-index: 2;
     width: 250px;
     left: 63px;
@@ -49,6 +49,7 @@ form {
     flex-direction: column;
     left: 63px;
     color: #666666;
+    align-items: center;
 }
 
 .form-group label {
@@ -100,6 +101,49 @@ input{
 }
 
 .form-group p{
-    font-size: 35px;
     margin: 14% 13% 6%;
+}
+
+#texts{
+       font-size: 35px;
+       margin: 1%;
+}
+
+.containerSection7 {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+}
+
+.rightSection7 {
+    width: 20%;
+    border-right: 2px solid black;
+}
+
+.centrSection7 {
+    width: 55%;
+}
+
+.leftSection7 {
+    width: 25%;
+    text-align: center;
+    margin-right: 1%;
+}
+
+.leftSection7 p {
+    margin-bottom: 0px;
+}
+
+
+.nav2 {
+    margin-left: 15%;
+    width: 50%;
+}
+
+.nav2 a {
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
 }
